@@ -10,8 +10,6 @@ import {
 import { ThemeProvider } from "next-themes";
 import { Inter as FontSans } from "next/font/google";
 import { notFound } from "next/navigation";
-
-import Footer from "@/components/blocks/footer";
 import Navbar from "@/components/blocks/navbar/navbar";
 import { ScrollRestore } from "@/components/blocks/scroll-restore";
 import JsonLdScripts from "@/components/jsonld-scripts";
@@ -85,7 +83,6 @@ export default async function LocaleLayout({
               <ScrollRestore />
               <Navbar />
               {children}
-              <Footer />
             </TooltipProvider>
           </ThemeProvider>
         </NextIntlClientProvider>

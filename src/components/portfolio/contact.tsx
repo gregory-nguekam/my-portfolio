@@ -19,11 +19,7 @@ export default function Contact({
   contactLabel = "Contact",
   getInTouch = "Get in Touch",
   contactDescription = "Want to chat? Feel free to reach out",
-  viaEmail = "via email",
-  askQuestions = "Ask questions",
-  exploreCollaboration = "Explore collaboration opportunities",
-  coffeeChat = "15-minute coffee chat",
-  schedule = "Schedule",
+  viaEmail = "via email"
 }: ContactProps) {
   return (
     <div className="space-y-3">
@@ -46,31 +42,6 @@ export default function Contact({
             →
           </span>
         </p>
-
-        <div className="flex flex-col items-center space-y-4">
-          <ul className="text-muted-foreground grid gap-3 text-center text-lg leading-relaxed md:text-xl">
-            <li className="hover:text-foreground transition-colors">
-              • {askQuestions}
-            </li>
-            <li className="hover:text-foreground transition-colors">
-              • {exploreCollaboration}
-            </li>
-            {calendlyUrl && (
-              <li className="hover:text-foreground transition-colors">
-                • {coffeeChat} (
-                <Link
-                  href={calendlyUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-foreground underline transition-colors hover:no-underline"
-                >
-                  {schedule}
-                </Link>
-                )
-              </li>
-            )}
-          </ul>
-        </div>
       </div>
     </div>
   );

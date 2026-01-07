@@ -18,7 +18,7 @@ type ChangeFrequency =
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Static pages
-  const staticPages = ["", "/blog", "/privacy-policy", "/terms-of-service"];
+  const staticPages = ["", "/privacy-policy", "/terms-of-service"];
 
   const pages = LOCALES.flatMap((locale) => {
     return staticPages.map((page) => ({

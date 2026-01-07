@@ -16,7 +16,7 @@ export function LanguageToggle({ disabled = false }: LanguageToggleProps) {
   const locale = useLocale();
 
   // Check if current locale is Chinese
-  const isChinese = locale === "zh";
+  const isFrench = locale === "fr";
 
   const handleLanguageToggle = (e: React.MouseEvent) => {
     if (disabled) {
@@ -33,13 +33,13 @@ export function LanguageToggle({ disabled = false }: LanguageToggleProps) {
     }
 
     // Switch to the other locale while preserving the path
-    const targetLocale = isChinese ? "en" : "zh";
+    const targetLocale = isFrench ? "en" : "fr";
     router.replace(pathname, { locale: targetLocale });
   };
 
   // Determine display text based on current locale
   // When disabled, always show "EN"
-  const displayText = disabled ? "EN" : isChinese ? "中" : "EN";
+  const displayText = disabled ? "EN" : isFrench ? "FR" : "EN";
 
   return (
     <Button

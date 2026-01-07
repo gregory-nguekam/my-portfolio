@@ -3,16 +3,12 @@ import Link from "next/link";
 import type React from "react";
 
 import { Icons } from "@/components/icons";
-import AwardsSection from "@/components/portfolio/awards-section";
 import Brief from "@/components/portfolio/brief";
 import Contact from "@/components/portfolio/contact";
 import Education from "@/components/portfolio/education";
-import NewsSection from "@/components/portfolio/news";
 import ProjectsSection from "@/components/portfolio/projects-section/projects-section";
-import Services from "@/components/portfolio/services";
 import Skills from "@/components/portfolio/skills";
 import SocialLinks from "@/components/portfolio/socallinks";
-import Talks from "@/components/portfolio/talks";
 import Work from "@/components/portfolio/work";
 import { CustomReactMarkdown } from "@/components/react-markdown";
 import { BlurFade } from "@/components/ui/blur-fade";
@@ -192,18 +188,6 @@ export default async function Page(props: {
         </BlurFade>
       </section>
 
-      {/* News Section */}
-      {newsItems && newsItems.length > 0 && (
-        <section id="news">
-          <NewsSection
-            news={newsItems}
-            delay={BLUR_FADE_DELAY * 5}
-            title={t("sections.news.title")}
-            showAllText={t("showAll")}
-          />
-        </section>
-      )}
-
       {/* Projects Section */}
       {projectsItems && projectsItems.length > 0 && (
         <section id="projects">
@@ -303,52 +287,6 @@ export default async function Page(props: {
               {t("sections.workExperience")}
             </h2>
             <Work work={workItems} />
-          </div>
-        </section>
-      )}
-
-      {/* Awards Section */}
-      {awardsItems && awardsItems.length > 0 && (
-        <section id="awards">
-          <h2 className="text-xl font-bold">{t("sections.awards")}</h2>
-          <AwardsSection awards={awardsItems} showAllText={t("showAll")} />
-        </section>
-      )}
-
-      {/* Academic Services Section */}
-      {((Array.isArray(reviewerConferences) &&
-        reviewerConferences.length > 0) ||
-        (Array.isArray(reviewerJournals) && reviewerJournals.length > 0) ||
-        (Array.isArray(teachingItems) && teachingItems.length > 0)) && (
-        <section id="academic-services">
-          <div className="flex min-h-0 flex-col gap-y-3">
-            <h2 className="text-xl font-bold">
-              {t("sections.academicServices")}
-            </h2>
-            <Services
-              reviewerConferences={reviewerConferences}
-              reviewerJournals={reviewerJournals}
-              teaching={teachingItems}
-              reviewerConferencesLabel={t(
-                "sections.teaching.reviewerConferencesLabel",
-              )}
-              reviewerJournalsLabel={t(
-                "sections.teaching.reviewerJournalsLabel",
-              )}
-              teachingLabel={t("sections.teaching.teachingLabel")}
-            />
-          </div>
-        </section>
-      )}
-
-      {/* Invited Talks Section */}
-      {invitedTalksItems && invitedTalksItems.length > 0 && (
-        <section id="invited-talks">
-          <div className="flex min-h-0 flex-col gap-y-3">
-            <h2 className="text-xl font-bold">
-              {t("sections.invitedTalks.title")}
-            </h2>
-            <Talks talks={invitedTalksItems} showAllText={t("showAll")} />
           </div>
         </section>
       )}

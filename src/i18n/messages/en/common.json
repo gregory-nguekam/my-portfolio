@@ -8,31 +8,10 @@
         "skills": "Skills",
         "education": "Education",
         "workExperience": "Internship & Work Experience",
-        "awards": "Awards & Honors",
-        "academicServices": "Academic Services",
-        "news": {
-            "title": "Latest News"
-        },
-        "publications": {
-            "title": "Publications"
-        },
-        "invitedTalks": {
-            "title": "Invited Talks"
-        },
-        "teaching": {
-            "title": "Teaching",
-            "reviewerConferencesLabel": "Conference Reviewer:",
-            "reviewerJournalsLabel": "Journal Reviewer:",
-            "teachingLabel": "Teaching Assistant:"
-        },
         "contact": "Contact",
         "getInTouch": "Get in Touch",
-        "contactDescription": "Want to chat? Feel free to reach out",
-        "viaEmail": "via email",
-        "askQuestions": "Ask questions",
-        "exploreCollaboration": "Explore collaboration opportunities",
-        "coffeeChat": "15-minute coffee chat",
-        "schedule": "Schedule"
+        "contactDescription": "Want to collaborate ? Feel free to reach out",
+        "viaEmail": "via email"
     },
     "showAll": "Show All",
     "navbar": {
@@ -43,11 +22,6 @@
                 "label": "Home"
             },
             {
-                "href": "/blog",
-                "icon": "notebook",
-                "label": "Blog"
-            },
-            {
                 "href": "/resume.pdf",
                 "icon": "fileuser",
                 "label": "CV"
@@ -56,27 +30,13 @@
         "theme": "Theme",
         "language": "Language"
     },
-    "blog": {
-        "title": "Blog",
-        "titleWithName": "{name}'s Blog",
-        "readMore": "Read more",
-        "authorLabel": "by",
-        "readingTime": "{minutes} min read",
-        "toc": {
-            "title": "Table of Contents",
-            "toggle": "Toggle table of contents",
-            "close": "Close table of contents",
-            "empty": "No table of contents available"
-        }
-    },
     "footer": {
         "navigation": {
             "about": "About",
             "projects": "Projects",
             "education": "Education",
             "experience": "Experience",
-            "skills": "Skills",
-            "awards": "Awards"
+            "skills": "Skills"
         },
         "sections": {
             "quickNavigation": "Quick Navigation",
@@ -87,42 +47,12 @@
         },
         "resources": [
             {
-                "name": "Blog",
-                "url": "/blog"
-            },
-            {
                 "name": "Template",
                 "url": "https://github.com/zhengzangw/nextjs-portfolio-blog-research"
             },
             {
                 "name": "Download CV",
                 "url": "/resume.pdf"
-            },
-            {
-                "name": "QR code",
-                "url": "/qrcode.png"
-            },
-            {
-                "name": "Business card",
-                "url": "/business-card-en.jpg"
-            }
-        ],
-        "discover": [
-            {
-                "name": "HPC-AI Lab",
-                "url": "https://ai.comp.nus.edu.sg/"
-            },
-            {
-                "name": "iCyPhy",
-                "url": "https://www.icyphy.org/people.html"
-            },
-            {
-                "name": "NJU-CSE-Flyers",
-                "url": "https://nju-cse-flyers.github.io/"
-            },
-            {
-                "name": "HPC-AI Tech",
-                "url": "https://www.hpcaitech.com/"
             }
         ],
         "contact": {
