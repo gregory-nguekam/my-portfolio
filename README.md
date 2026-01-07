@@ -77,7 +77,7 @@ The repo includes example portfolio data and blog posts so you'll see real conte
 ### 🚀 Deploy to Vercel Instantly
 
 Click  
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fzhengzangw%2Fnextjs-portfolio-blog-research)  
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fgregory-nguekam%2Fmy_portfolio)  
 Your portfolio will be live in minutes! No config needed. Vercel’s generous free plan is perfect for personal and demo sites.
 
 ---
