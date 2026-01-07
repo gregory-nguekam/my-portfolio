@@ -27,7 +27,7 @@
         "dates": "Oct. 2025",
         "active": true,
         "description": "The template for this website, named Nextjs-Portfolio-Blog-Research. Built with Next.js, Tailwind CSS, Vercel, and more.",
-        "image": "/proj-portfolio-template.png",
+        "image": "",
         "links": [
           {
             "type": "Github",
