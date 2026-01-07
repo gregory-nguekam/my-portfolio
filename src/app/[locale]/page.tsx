@@ -54,8 +54,6 @@ export default async function Page(props: {
   };
 
   const skills = getArrayField<string>("skills");
-  const reviewerConferences = getArrayField<string>("reviewerConferences");
-  const reviewerJournals = getArrayField<string>("reviewerJournals");
 
   const personJsonLd = await generatePersonJsonLd(locale);
 
@@ -84,11 +82,6 @@ export default async function Page(props: {
   };
 
   // Get collections data and check if items are empty
-  const newsItems = getCollectionItems<{
-    date: string;
-    title: string;
-    content: string;
-  }>("news.items");
   const projectsItems = getCollectionItems<{
     title: string;
     href?: string;
@@ -101,18 +94,6 @@ export default async function Page(props: {
     image?: string;
     video?: string;
   }>("projects.items");
-  const publicationsItems = getCollectionItems<{
-    title: string;
-    href?: string;
-    dates: string;
-    active: boolean;
-    description: string;
-    technologies: string[];
-    authors: string;
-    links?: Array<{ type: string; href: string; icon: string }>;
-    image?: string;
-    video?: string;
-  }>("publications.items");
   const educationItems = getCollectionItems<{
     school: string;
     href: string;
@@ -132,22 +113,6 @@ export default async function Page(props: {
     end: string;
     description: string;
   }>("work.items");
-  const awardsItems = getCollectionItems<{
-    year: number;
-    title: string;
-  }>("awards.items");
-  const teachingItems = getCollectionItems<{
-    date: string;
-    title: string;
-    location: string;
-  }>("teaching.items");
-  const invitedTalksItems = getCollectionItems<{
-    host: string;
-    url: string;
-    date: string;
-    title: string;
-    logoUrl?: string;
-  }>("invitedTalks.items");
 
   return (
     <main className="mx-auto flex min-h-dvh max-w-7xl flex-col space-y-8 px-6 py-8 pb-24 sm:space-y-10 sm:px-16 md:px-20 md:py-16 md:pt-14 lg:px-24 lg:py-20 xl:px-32 xl:py-24">
@@ -218,47 +183,6 @@ export default async function Page(props: {
         </section>
       )}
 
-      {/* Publications Section */}
-      {publicationsItems && publicationsItems.length > 0 && (
-        <section id="publications">
-          <div className="w-full space-y-12 py-12">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <div className="bg-foreground text-background inline-block rounded-lg px-3 py-1 text-sm">
-                  {t("sections.research")}
-                </div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  {t("sections.publications.title")}
-                </h2>
-                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  {t("sections.viewFullPublications")}{" "}
-                  <Link
-                    href={socialData.GoogleScholar.url}
-                    className="text-foreground underline hover:no-underline"
-                    target="_blank"
-                  >
-                    {socialData.GoogleScholar.name}
-                  </Link>
-                </p>
-              </div>
-            </div>
-            <ProjectsSection
-              projects={publicationsItems.map((project) => ({
-                ...project,
-                links: project.links?.map((link) => ({
-                  ...link,
-                  icon: getIconComponent(link.icon),
-                })),
-              }))}
-              delay={BLUR_FADE_DELAY * 3}
-              mobileDisplayCount={6}
-              desktopDisplayCount={6}
-              showAllText={t("showAll")}
-            />
-          </div>
-        </section>
-      )}
-
       {/* Skills Section */}
       {Array.isArray(skills) && skills.length > 0 && (
         <section id="skills">
@@ -301,10 +225,7 @@ export default async function Page(props: {
             getInTouch={t("sections.getInTouch")}
             contactDescription={t("sections.contactDescription")}
             viaEmail={t("sections.viaEmail")}
-            askQuestions={t("sections.askQuestions")}
-            exploreCollaboration={t("sections.exploreCollaboration")}
-            coffeeChat={t("sections.coffeeChat")}
-            schedule={t("sections.schedule")}
+
           />
         </div>
       </section>
