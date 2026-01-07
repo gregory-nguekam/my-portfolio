@@ -19,31 +19,6 @@
         ],
         "image": "/icon/cairly.png",
         "video": ""
-      },
-      {
-        "title": "Template pour ce site",
-        "href": "https://github.com/zhengzangw/nextjs-portfolio-blog-research",
-        "dates": "Oct. 2025",
-        "active": true,
-        "description": "Le template utilisé pour ce site, nommé Nextjs-Portfolio-Blog-Research. Construit avec Next.js, Tailwind CSS, Vercel, et plus.",
-        "image": "/proj-portfolio-template.png",
-        "links": [
-          {
-            "type": "Github",
-            "href": "https://github.com/zhengzangw/nextjs-portfolio-blog-research",
-            "icon": "github"
-          },
-          {
-            "type": "Docs",
-            "href": "https://docs-nextjs-portfolio-blog-research.zangwei.dev/",
-            "icon": "bookopen"
-          },
-          {
-            "type": "Blog",
-            "href": "/blog/note-nextjs-homepage",
-            "icon": "newspaper"
-          }
-        ]
       }
     ]
   },
