@@ -24,9 +24,9 @@
       {
         "title": "Solidarité & sérénité",
         "href": "https://solidarite-serenite.vercel.app",
-        "dates": "Jun. 2025 - Present",
+        "dates": "Jan. 2026 - Present",
         "active": true,
-        "description": "Cairly is a motivational app that helps users stay focused and achieve their goals.",
+        "description": "",
         "technologies": ["Springboot", "React"],
         "authors": "Gregory Nguekam",
         "links": [

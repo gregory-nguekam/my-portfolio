@@ -19,7 +19,25 @@
         ],
         "image": "/icon/cairly.png",
         "video": ""
-      }
+      },
+      {
+        "title": "Solidarité & sérénité",
+        "href": "https://solidarite-serenite.vercel.app",
+        "dates": "Jan. 2026 - Present",
+        "active": true,
+        "description": "",
+        "technologies": ["Springboot", "React"],
+        "authors": "Gregory Nguekam",
+        "links": [
+          {
+            "type": "GitHub",
+            "href": "https://github.com/gregory-nguekam/solidarite_serenite",
+            "icon": "github"
+          }
+        ],
+        "image": "/icon/solidarite_serenite.jpeg",
+        "video": ""
+      } 
     ]
   },
 
